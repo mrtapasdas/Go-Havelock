@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
+  // ==========================================
     // 5. Typing Animation Logic (Hero Section)
     // ==========================================
     const typingElement = document.getElementById('typing-text');
@@ -166,4 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start the animation loop
         typeEffect();
     }
-});
+};
