@@ -1,16 +1,28 @@
-/* --- Hero Animations (Mobile Fixed) --- */
+/* --- Hero Animations (Mobile Optimized) --- */
 
-/* 1. Moving Gradient Text Effect */
+/* 1. Gradient Text with Safety Fallback */
 .animate-gradient-text {
+    /* 1. Define the gradient here for consistency */
+    background: linear-gradient(to right, #FF7F50, #FDE047, #FF7F50);
     background-size: 200% auto;
-    /* Essential for Mobile Safari/iOS */
+    
+    /* 2. Fallback color (If gradient fails, text will be orange, not invisible) */
+    color: #FF7F50;
+
+    /* 3. The Clip Magic (Required for Mobile) */
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
     
+    /* 4. Make text transparent ONLY if clip is supported */
+    -webkit-text-fill-color: transparent;
+    
+    /* 5. The Animation */
     animation: gradientMove 4s ease infinite;
     -webkit-animation: gradientMove 4s ease infinite;
+    
+    /* 6. Hardware Acceleration */
+    will-change: background-position;
+    display: inline-block; /* Forces gradient to calculate correctly */
 }
 
 @keyframes gradientMove {
@@ -25,25 +37,33 @@
     100% { background-position: 0% 50%; }
 }
 
-/* 2. Reusable Fade In Up */
+/* 2. Fade In Up (Prevents "stuck at opacity 0") */
 .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    -webkit-animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    opacity: 0; 
-    transform: translateY(30px); 
+    /* Start state defined in keyframes, but strictly controlled here */
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    -webkit-animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    will-change: transform, opacity;
 }
 
 @keyframes fadeInUp {
-    to {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @-webkit-keyframes fadeInUp {
-    to {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
     }
 }
 
