@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Updated: 4 phrases, approx 19-20 chars each
         const phrases = [
             "Experience Luxury in",   // 20 chars
-            "Discover Paradise in",   // 20 chars
-            "Pristine Beaches in",    // 19 chars
+            "Escape to Nature in",   // 20 chars
+            "Unveil the Magic of",    // 19 chars
             "Create Your Story in"    // 20 chars
         ];
         
