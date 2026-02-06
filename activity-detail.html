@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Details | Havelock Island Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ocean-teal': '#008080',
+                        'sand-beige': '#F5F5DC',
+                        'sunset-orange': '#FF7F50',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'heading': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-ocean-teal p-4 text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-heading font-bold text-xl"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-6 md:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <div class="lg:col-span-2">
+                <img id="activity-img" src="https://images.unsplash.com/photo-1544551763-46a875657c37?q=80&w=2070" class="w-full h-80 object-cover rounded-2xl shadow-lg mb-8" alt="Activity">
+                
+                <h1 id="activity-title" class="text-4xl font-heading font-bold text-ocean-teal mb-4">Scuba Diving (Shore Dive)</h1>
+                
+                <div class="flex gap-4 mb-6 text-sm text-gray-600">
+                    <span><i class="fas fa-clock text-sunset-orange"></i> 3 Hours</span>
+                    <span><i class="fas fa-user-friends text-sunset-orange"></i> Ages 10+</span>
+                    <span><i class="fas fa-bolt text-sunset-orange"></i> Moderate Intensity</span>
+                </div>
+
+                <div class="prose max-w-none text-gray-600 mb-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Overview</h3>
+                    <p class="mb-4">Experience the thrill of breathing underwater. This program is designed for beginners (non-swimmers) and includes a training session followed by a guided dive at Nemo Reef.</p>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Itinerary</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Pickup from hotel (if selected).</li>
+                        <li>Training on breathing techniques and hand signals (20 mins).</li>
+                        <li>Gear up and enter shallow water.</li>
+                        <li>Underwater dive with instructor (45 mins).</li>
+                        <li>Photos and videos transfer.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">What to Wear/Carry</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Swimwear or comfortable t-shirt/shorts.</li>
+                        <li>Towel and change of clothes.</li>
+                        <li>Sunscreen and sunglasses.</li>
+                        <li>Pendrive/Phone for photos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-2xl shadow-xl sticky top-8 border border-gray-100">
+                    <h3 class="text-2xl font-heading font-bold mb-4">Book This Activity</h3>
+                    <div class="mb-6">
+                        <span class="text-gray-500 text-sm">Starting from</span>
+                        <div class="text-3xl font-bold text-ocean-teal">₹3,500 <span class="text-sm font-normal text-gray-500">/ person</span></div>
+                    </div>
+
+                    <form id="booking-form" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Name</label>
+                            <input type="text" id="name" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Date</label>
+                            <input type="date" id="date" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Guests</label>
+                            <input type="number" id="guests" min="1" value="2" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                        </div>
+                        <button type="submit" class="w-full bg-sunset-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1">
+                            <i class="fab fa-whatsapp mr-2"></i> Inquire via WhatsApp
+                        </button>
+                        <p class="text-xs text-center text-gray-400 mt-2">No payment required now. Confirm availability with our agent.</p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
