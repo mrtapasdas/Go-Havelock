@@ -67,28 +67,44 @@
 
     <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-2 px-6 md:px-12 bg-ocean-teal shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="https://www.gohavelock.com" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
+            <a href="#" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
                 <span class="text-sunset-orange">Go </span>Havelock
             </a>
             
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-white hover:text-sunset-orange font-medium transition">Home</a>
-                <a href="#activities" class="text-white hover:text-sunset-orange font-medium transition">Activities</a>
-                <a href="#about" class="text-white hover:text-sunset-orange font-medium transition">About</a>
-                <a href="#contact" class="bg-sunset-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full font-heading font-semibold transition shadow-lg">
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#activities" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Activities
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact-section" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Contact Us
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <a href="#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-heading font-semibold text-sm transition-all shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-0.5">
                     Book Now
                 </a>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-ocean-teal/95 backdrop-blur-md shadow-xl py-6 flex-col items-center space-y-4 md:hidden">
-            <a href="#home" class="text-white text-lg">Home</a>
-            <a href="#activities" class="text-white text-lg">Activities</a>
-            <a href="#contact" class="bg-white text-ocean-teal px-6 py-2 rounded-full font-bold">Book Now</a>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-ocean-teal/95 backdrop-blur-md shadow-xl py-6 flex-col items-center space-y-6 md:hidden border-t border-white/10">
+            <a href="#home" class="text-white text-lg font-medium hover:text-sunset-orange">Home</a>
+            <a href="#activities" class="text-white text-lg font-medium hover:text-sunset-orange">Activities</a>
+            <a href="#about" class="text-white text-lg font-medium hover:text-sunset-orange">About</a>
+            <a href="#contact-section" class="text-white text-lg font-medium hover:text-sunset-orange">Contact Us</a>
+            <a href="#activities" class="bg-sunset-orange text-white px-8 py-3 rounded-full font-bold shadow-md">Book Adventure</a>
         </div>
     </nav>
 
