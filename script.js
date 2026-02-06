@@ -122,10 +122,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('typing-text');
     
     if (typingElement) {
+        // Updated: 4 phrases, approx 19-20 chars each
         const phrases = [
-            "Unforgettable Adventures in", 
-            "Discover Pure Paradise in", 
-            "Experience Luxury in"
+            "Experience Luxury in",   // 20 chars
+            "Discover Paradise in",   // 20 chars
+            "Pristine Beaches in",    // 19 chars
+            "Create Your Story in"    // 20 chars
         ];
         
         let phraseIndex = 0;
