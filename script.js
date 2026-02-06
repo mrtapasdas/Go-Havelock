@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Contact Page Form Logic ---
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const interest = document.getElementById('contact-interest').value;
+            const messageText = document.getElementById('contact-message').value;
+
+            // Construct WhatsApp Message
+            const message = `*New Website Inquiry* %0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Interest:* ${interest}%0A*Message:* ${messageText}`;
+            
+            // Your WhatsApp Number
+            const whatsappUrl = `https://wa.me/919531671758?text=${message}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    }
     
     // --- Navigation Logic ---
     const navbar = document.getElementById('navbar');
