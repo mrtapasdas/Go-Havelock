@@ -1,28 +1,34 @@
-/* --- Hero Animations (Mobile Optimized) --- */
+/* --- Typing Animation --- */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    color: #FF7F50; /* Sunset Orange Cursor */
+    margin-left: 2px;
+    font-weight: 400;
+}
 
-/* 1. Gradient Text with Safety Fallback */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typing-container {
+    display: inline-block;
+    min-height: 1.2em;
+}
+
+/* --- Hero Animations (Mobile Optimized) --- */
 .animate-gradient-text {
-    /* 1. Define the gradient here for consistency */
     background: linear-gradient(to right, #FF7F50, #FDE047, #FF7F50);
     background-size: 200% auto;
-    
-    /* 2. Fallback color (If gradient fails, text will be orange, not invisible) */
-    color: #FF7F50;
-
-    /* 3. The Clip Magic (Required for Mobile) */
+    color: #FF7F50; /* Fallback */
     -webkit-background-clip: text;
     background-clip: text;
-    
-    /* 4. Make text transparent ONLY if clip is supported */
     -webkit-text-fill-color: transparent;
-    
-    /* 5. The Animation */
     animation: gradientMove 4s ease infinite;
     -webkit-animation: gradientMove 4s ease infinite;
-    
-    /* 6. Hardware Acceleration */
     will-change: background-position;
-    display: inline-block; /* Forces gradient to calculate correctly */
+    display: inline-block;
 }
 
 @keyframes gradientMove {
@@ -37,59 +43,28 @@
     100% { background-position: 0% 50%; }
 }
 
-/* 2. Fade In Up (Prevents "stuck at opacity 0") */
+/* Fade In Up */
 .animate-fade-in-up {
-    /* Start state defined in keyframes, but strictly controlled here */
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
     -webkit-animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
     will-change: transform, opacity;
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 @-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
+    0% { opacity: 0; -webkit-transform: translateY(30px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
 }
 
-/* 3. Delays */
+/* Delays */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-500 { animation-delay: 0.5s; }
 .delay-700 { animation-delay: 0.7s; }
-
-/* --- Typing Animation --- */
-.typing-cursor::after {
-    content: '|';
-    animation: blink 1s step-start infinite;
-    color: #FF7F50; /* Sunset Orange Cursor */
-    margin-left: 2px;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-/* Ensure minimum height to prevent layout shift during deletion */
-.typing-container {
-    min-height: 1.2em;
-    display: inline-block;
-}
 
 /* Glassmorphism Helper */
 .glass-card {
@@ -148,3 +123,71 @@
 .lazyloaded {
 	opacity: 1;
 }
+
+/* --- Typing Animation --- */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    color: #FF7F50; /* Sunset Orange Cursor */
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typing-container {
+    display: inline-block;
+    min-height: 1.2em;
+}
+
+/* --- Hero Animations (Mobile Optimized) --- */
+.animate-gradient-text {
+    background: linear-gradient(to right, #FF7F50, #FDE047, #FF7F50);
+    background-size: 200% auto;
+    color: #FF7F50; /* Fallback */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 4s ease infinite;
+    -webkit-animation: gradientMove 4s ease infinite;
+    will-change: background-position;
+    display: inline-block;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-webkit-keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fade In Up */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    -webkit-animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    will-change: transform, opacity;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% { opacity: 0; -webkit-transform: translateY(30px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+/* Delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
