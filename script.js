@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('flex');
     });
 
+    // FIX: Close Mobile Menu when a link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        });
+    });
+
     // --- Activity Filtering ---
     const filterBtns = document.querySelectorAll('.filter-btn');
     const activityCards = document.querySelectorAll('.activity-card');
