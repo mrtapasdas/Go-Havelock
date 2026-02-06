@@ -1,3 +1,38 @@
+/* --- Hero Animations --- */
+
+/* 1. Moving Gradient Text Effect */
+.animate-gradient-text {
+    background-size: 200% auto;
+    animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 2. Reusable Fade In Up with Opacity Control */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px); /* Start slightly down */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3. Animation Delays (Stagger Effect) */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+
 /* Glassmorphism Helper */
 .glass-card {
     background: rgba(255, 255, 255, 0.2);
