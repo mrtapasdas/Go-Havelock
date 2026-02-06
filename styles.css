@@ -1,9 +1,16 @@
-/* --- Hero Animations --- */
+/* --- Hero Animations (Mobile Fixed) --- */
 
 /* 1. Moving Gradient Text Effect */
 .animate-gradient-text {
     background-size: 200% auto;
+    /* Essential for Mobile Safari/iOS */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    
     animation: gradientMove 4s ease infinite;
+    -webkit-animation: gradientMove 4s ease infinite;
 }
 
 @keyframes gradientMove {
@@ -12,11 +19,18 @@
     100% { background-position: 0% 50%; }
 }
 
-/* 2. Reusable Fade In Up with Opacity Control */
+@-webkit-keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 2. Reusable Fade In Up */
 .animate-fade-in-up {
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    opacity: 0; /* Start invisible */
-    transform: translateY(30px); /* Start slightly down */
+    -webkit-animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0; 
+    transform: translateY(30px); 
 }
 
 @keyframes fadeInUp {
@@ -26,10 +40,16 @@
     }
 }
 
-/* 3. Animation Delays (Stagger Effect) */
+@-webkit-keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3. Delays */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
 .delay-500 { animation-delay: 0.5s; }
 .delay-700 { animation-delay: 0.7s; }
 
