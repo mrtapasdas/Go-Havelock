@@ -61,7 +61,7 @@
 .typing-cursor::after {
     content: '|';
     animation: blink 1s step-start infinite;
-    color: #FF7F50;
+    color: #FF7F50; /* Sunset Orange Cursor */
     margin-left: 2px;
     font-weight: 400;
 }
