@@ -59,20 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filterBtns[0].click();
     }
 
-    // --- Modal Logic ---
-    window.openModal = function() {
-        document.getElementById('info-modal').classList.remove('hidden');
-    }
-
-    window.closeModal = function() {
-        document.getElementById('info-modal').classList.add('hidden');
-    }
-
-    // Close modal on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeModal();
-    });
-
     // --- Booking Form to WhatsApp ---
     const bookingForm = document.getElementById('booking-form');
     if (bookingForm) {
