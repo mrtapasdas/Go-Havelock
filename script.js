@@ -1,5 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Typing Animation Logic ---
+    const typingElement = document.getElementById('typing-text');
+    
+    if (typingElement) {
+        // The 3 different H1 prefixes you requested
+        const phrases = [
+            "Unforgettable Adventures in", 
+            "Discover Pure Paradise in", 
+            "Experience Luxury in"
+        ];
+        
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100; // Speed of typing
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                // Deleting text
+                typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50; // Faster when deleting
+            } else {
+                // Typing text
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 100; // Normal typing speed
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                // Finished typing phrase, pause before deleting
+                isDeleting = true;
+                typeSpeed = 2000; // Wait 2 seconds before deleting
+            } else if (isDeleting && charIndex === 0) {
+                // Finished deleting, switch to next phrase
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500; // Pause briefly before typing next
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        // Start the loop
+        typeEffect();
+    }
+
     // --- Contact Page Form Logic ---
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
