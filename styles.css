@@ -73,6 +73,24 @@
 .delay-500 { animation-delay: 0.5s; }
 .delay-700 { animation-delay: 0.7s; }
 
+/* --- Typing Animation --- */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    color: #FF7F50; /* Sunset Orange Cursor */
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Ensure minimum height to prevent layout shift during deletion */
+.typing-container {
+    min-height: 1.2em;
+    display: inline-block;
+}
+
 /* Glassmorphism Helper */
 .glass-card {
     background: rgba(255, 255, 255, 0.2);
