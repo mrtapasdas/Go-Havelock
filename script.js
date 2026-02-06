@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const message = `*New Booking Inquiry* %0A%0A*Activity:* ${activity}%0A*Name:* ${name}%0A*Date:* ${date}%0A*Guests:* ${guests}%0A%0APlease confirm availability.`;
             
-            const whatsappUrl = `https://wa.me/919999999999?text=${message}`; // Replace with real number
+            const whatsappUrl = `https://wa.me/919531671758?text=${message}`; // Replace with real number
             
             window.open(whatsappUrl, '_blank');
         });
