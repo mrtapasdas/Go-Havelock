@@ -166,4 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start the animation loop
         typeEffect();
     }
-};
+});
