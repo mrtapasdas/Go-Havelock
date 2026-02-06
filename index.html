@@ -271,42 +271,79 @@
         </div>
     </section>
 
-    <section class="bg-white py-16">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section id="about" class="bg-white py-24 relative scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
-            <div class="rounded-2xl overflow-hidden shadow-xl h-96 relative">
-                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.66687402633!2d92.95150894541577!3d11.976077598822645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088d9a135e54867%3A0x600c32607185070f!2sHavelock%20Island!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-                <div class="absolute bottom-4 left-4 bg-white p-3 rounded-lg shadow-md text-sm">
-                    <p class="font-bold text-ocean-teal">📍 Activity Center</p>
-                    <p>Govind Nagar, Havelock</p>
+            <div class="space-y-8 sticky top-32">
+                <div class="rounded-3xl overflow-hidden shadow-2xl h-80 relative group border border-gray-100">
+                     <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31226.79093282216!2d92.9868725!3d12.0308064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088d9a135e5487f%3A0x62957777823d06f2!2sHavelock%20Island!5e0!3m2!1sen!2sin!4v1234567890" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale group-hover:grayscale-0 transition duration-700">
+                    </iframe>
+                    <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur text-gray-800 p-4 rounded-xl shadow-lg text-sm border border-gray-100">
+                        <p class="font-bold text-ocean-teal flex items-center gap-2"><i class="fas fa-map-pin text-sunset-orange"></i> Activity Center</p>
+                        <p class="mt-1">Govind Nagar, Beach No. 3</p>
+                    </div>
+                </div>
+
+                <div class="bg-ocean-teal rounded-3xl p-8 text-white relative overflow-hidden shadow-xl">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+                    <i class="fas fa-eye text-4xl text-sunset-orange mb-4 opacity-90"></i>
+                    <h3 class="text-2xl font-heading font-bold mb-3">Our Vision</h3>
+                    <p class="text-ocean-teal-50 leading-relaxed text-sm opacity-90">
+                        To be the guardians of the Andaman sea while sharing its magic. We believe in <strong>sustainable tourism</strong>—showing you the beauty of the reefs today, ensuring they remain vibrant for generations to come.
+                    </p>
                 </div>
             </div>
 
             <div>
-                <h2 class="text-3xl font-heading font-bold text-ocean-teal mb-6">Experience Havelock Like a Local</h2>
-                <p class="text-gray-600 mb-8">We are a team of island natives and PADI certified professionals dedicated to showing you the hidden gems of the Andamans. We prioritize safety without compromising on the thrill.</p>
+                <span class="inline-block py-1 px-3 bg-ocean-teal/10 text-ocean-teal rounded-full text-xs font-bold tracking-widest uppercase mb-4">About Us</span>
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-800 mb-6 leading-tight">
+                    More Than Just <br><span class="text-ocean-teal">A Travel Agency</span>
+                </h2>
                 
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-sand-beige p-3 rounded-full text-ocean-teal">
+                <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                    We are a collective of island natives, marine biologists, and PADI-certified professionals. Unlike generic aggregators, we live here, dive here, and know every hidden cove of Havelock.
+                </p>
+
+                <div class="mb-10 relative pl-6 border-l-2 border-sunset-orange/30">
+                    <h3 class="text-xl font-heading font-bold text-gray-800 mb-2">Our History</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        What started in <strong>2014</strong> as a humble two-man team with a single wooden boat has grown into Havelock's most trusted adventure provider. Over the last decade, we have safely guided over <span class="text-ocean-teal font-bold">15,000+ travelers</span> into the deep blue, evolving from simple guides to curators of luxury island experiences.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunset-orange shadow-sm mb-4">
                             <i class="fas fa-ship text-xl"></i>
                         </div>
-                        <div>
-                            <h4 class="font-bold font-heading">Island Hopping</h4>
-                            <p class="text-sm text-gray-500">Exclusive access to uncrowded spots.</p>
-                        </div>
+                        <h4 class="font-bold font-heading text-lg mb-2">Local Expertise</h4>
+                        <p class="text-sm text-gray-500">We take you to spots Google Maps doesn't know about.</p>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div class="bg-sand-beige p-3 rounded-full text-ocean-teal">
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunset-orange shadow-sm mb-4">
                             <i class="fas fa-camera text-xl"></i>
                         </div>
-                        <div>
-                            <h4 class="font-bold font-heading">Free Underwater Photos</h4>
-                            <p class="text-sm text-gray-500">Complimentary photography with Scuba packages.</p>
+                        <h4 class="font-bold font-heading text-lg mb-2">Memories First</h4>
+                        <p class="text-sm text-gray-500">Complimentary underwater photography with every dive.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunset-orange shadow-sm mb-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
                         </div>
+                        <h4 class="font-bold font-heading text-lg mb-2">Safety Guaranteed</h4>
+                        <p class="text-sm text-gray-500">100% safety record with international standard equipment.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sunset-orange shadow-sm mb-4">
+                            <i class="fas fa-heart text-xl"></i>
+                        </div>
+                        <h4 class="font-bold font-heading text-lg mb-2">Personal Touch</h4>
+                        <p class="text-sm text-gray-500">Customized itineraries for couples, families, and solo travelers.</p>
                     </div>
                 </div>
             </div>
