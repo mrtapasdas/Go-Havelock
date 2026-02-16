@@ -24,83 +24,159 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    <nav class="bg-ocean-teal p-4 text-white">
+    <a href="https://wa.me/919531671758" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 animate-bounce-slow">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-2 px-6 md:px-12 bg-ocean-teal shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="font-heading font-bold text-xl"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
+            <a href="index.html" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
+                <span class="text-sunset-orange">Go </span>Havelock
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-white font-medium hover:text-sunset-orange transition">Home</a>
+                <a href="index.html#activities" class="text-white font-medium hover:text-sunset-orange transition">Activities</a>
+                <a href="index.html#about" class="text-white font-medium hover:text-sunset-orange transition">About</a>
+                <a href="index.html#contact-section" class="text-white font-medium hover:text-sunset-orange transition">Contact Us</a>
+                <a href="index.html#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-heading font-semibold text-sm transition-all shadow-lg hover:-translate-y-0.5">
+                    Book Now
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-ocean-teal shadow-xl py-8 flex-col items-center space-y-6 md:hidden border-t border-white/10">
+            <a href="index.html" class="text-white text-lg font-medium hover:text-sunset-orange transition">Home</a>
+            <a href="index.html#activities" class="text-white text-lg font-medium hover:text-sunset-orange transition">Activities</a>
+            <a href="index.html#about" class="text-white text-lg font-medium hover:text-sunset-orange transition">About</a>
+            <a href="index.html#contact-section" class="text-white text-lg font-medium hover:text-sunset-orange transition">Contact Us</a>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto p-6 md:p-12">
+    <main class="max-w-7xl mx-auto p-6 md:p-12 pt-28">
+        
+        <div class="mb-6 text-sm text-gray-500">
+            <a href="index.html" class="hover:text-ocean-teal">Home</a> <i class="fas fa-chevron-right mx-2 text-xs"></i> 
+            <a href="index.html#activities" class="hover:text-ocean-teal">Activities</a> <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <span id="breadcrumb-title" class="text-ocean-teal font-semibold">Activity</span>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
             <div class="lg:col-span-2">
-                <img id="activity-img" src="https://images.unsplash.com/photo-1544551763-46a875657c37?q=80&w=2070" class="w-full h-80 object-cover rounded-2xl shadow-lg mb-8" alt="Activity">
+                <div class="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-lg mb-8">
+                    <img id="detail-img" src="" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" alt="Activity Image">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
                 
-                <h1 id="activity-title" class="text-4xl font-heading font-bold text-ocean-teal mb-4">Scuba Diving (Shore Dive)</h1>
+                <h1 id="detail-title" class="text-3xl md:text-5xl font-heading font-bold text-ocean-teal mb-4 leading-tight">Loading Activity...</h1>
                 
-                <div class="flex gap-4 mb-6 text-sm text-gray-600">
-                    <span><i class="fas fa-clock text-sunset-orange"></i> 3 Hours</span>
-                    <span><i class="fas fa-user-friends text-sunset-orange"></i> Ages 10+</span>
-                    <span><i class="fas fa-bolt text-sunset-orange"></i> Moderate Intensity</span>
+                <div class="flex flex-wrap gap-4 md:gap-8 mb-8 text-sm text-gray-600 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                    <span class="flex items-center gap-2"><i class="fas fa-clock text-sunset-orange text-lg"></i> <span id="detail-duration">--</span></span>
+                    <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-sunset-orange text-lg"></i> <span id="detail-location">--</span></span>
+                    <span class="flex items-center gap-2"><i class="fas fa-bolt text-sunset-orange text-lg"></i> <span id="detail-type">--</span></span>
                 </div>
 
-                <div class="prose max-w-none text-gray-600 mb-8">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Overview</h3>
-                    <p class="mb-4">Experience the thrill of breathing underwater. This program is designed for beginners (non-swimmers) and includes a training session followed by a guided dive at Nemo Reef.</p>
+                <div class="prose max-w-none text-gray-600 mb-12">
+                    <h3 class="text-2xl font-heading font-bold text-gray-800 mb-4">Overview</h3>
+                    <p id="detail-desc" class="mb-6 leading-relaxed text-lg">Loading description...</p>
                     
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Itinerary</h3>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Pickup from hotel (if selected).</li>
-                        <li>Training on breathing techniques and hand signals (20 mins).</li>
-                        <li>Gear up and enter shallow water.</li>
-                        <li>Underwater dive with instructor (45 mins).</li>
-                        <li>Photos and videos transfer.</li>
-                    </ul>
+                    <h3 class="text-2xl font-heading font-bold text-gray-800 mb-4">Highlights & Itinerary</h3>
+                    <ul id="detail-itinerary" class="space-y-3 mb-8">
+                        </ul>
 
-                    <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">What to Wear/Carry</h3>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Swimwear or comfortable t-shirt/shorts.</li>
-                        <li>Towel and change of clothes.</li>
-                        <li>Sunscreen and sunglasses.</li>
-                        <li>Pendrive/Phone for photos.</li>
-                    </ul>
+                    <div class="bg-sand-beige/30 p-6 rounded-2xl border border-sand-beige">
+                        <h3 class="text-xl font-heading font-bold text-ocean-teal mb-3"><i class="fas fa-suitcase mr-2"></i> What to Carry/Wear</h3>
+                        <ul id="detail-carry" class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                             </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="lg:col-span-1">
-                <div class="bg-white p-6 rounded-2xl shadow-xl sticky top-8 border border-gray-100">
-                    <h3 class="text-2xl font-heading font-bold mb-4">Book This Activity</h3>
-                    <div class="mb-6">
-                        <span class="text-gray-500 text-sm">Starting from</span>
-                        <div class="text-3xl font-bold text-ocean-teal">₹3,500 <span class="text-sm font-normal text-gray-500">/ person</span></div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl sticky top-28 border border-gray-100">
+                    <div class="border-b border-gray-100 pb-6 mb-6">
+                        <span class="text-gray-500 text-sm font-bold uppercase tracking-wider">Best Price Guarantee</span>
+                        <div class="flex items-baseline gap-1 mt-2">
+                            <span class="text-4xl font-bold text-ocean-teal" id="detail-price">₹--</span>
+                            <span class="text-sm text-gray-500" id="detail-price-unit">/ person</span>
+                        </div>
                     </div>
 
-                    <form id="booking-form" class="space-y-4">
+                    <form id="booking-form" class="space-y-5">
+                        <input type="hidden" id="hidden-activity-name">
+                        
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Name</label>
-                            <input type="text" id="name" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Your Name</label>
+                            <input type="text" id="name" required class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-teal transition" placeholder="John Doe">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Date</label>
-                            <input type="date" id="date" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Travel Date</label>
+                            <input type="date" id="date" required class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-teal transition">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Guests</label>
-                            <input type="number" id="guests" min="1" value="2" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-teal bg-gray-50">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">No. of Guests</label>
+                            <input type="number" id="guests" min="1" value="2" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-teal transition">
                         </div>
-                        <button type="submit" class="w-full bg-sunset-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1">
-                            <i class="fab fa-whatsapp mr-2"></i> Inquire via WhatsApp
+                        
+                        <button type="submit" class="w-full bg-sunset-orange hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <span>Check Availability</span> <i class="fab fa-whatsapp text-xl"></i>
                         </button>
-                        <p class="text-xs text-center text-gray-400 mt-2">No payment required now. Confirm availability with our agent.</p>
+                        <p class="text-xs text-center text-gray-400 mt-2">You will be redirected to WhatsApp to confirm.</p>
                     </form>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="text-sm text-gray-500 mb-2">Need help?</p>
+                        <a href="tel:+919531671758" class="text-ocean-teal font-bold hover:underline"><i class="fas fa-phone-alt mr-1"></i> +91 9531671758</a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </main>
+
+    <footer class="bg-ocean-teal text-white py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-2xl font-heading font-bold mb-4"><span class="text-sunset-orange">Go </span>Havelock</h3>
+                <p class="text-gray-100 text-sm">Your gateway to the Andaman Islands. Authorized adventure sports provider.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-100">
+                    <li><a href="index.html#about" class="hover:text-sunset-orange transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">Gallery</a></li>
+                    <li><a href="index.html#contact-section" class="hover:text-sunset-orange transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Popular Activities</h4>
+                <ul class="space-y-2 text-sm text-gray-100">
+                    <li><a href="activity-detail.html?id=scuba" class="hover:text-sunset-orange transition">Scuba Diving</a></li>
+                    <li><a href="activity-detail.html?id=kayak" class="hover:text-sunset-orange transition">Night Kayaking</a></li>
+                    <li><a href="activity-detail.html?id=ferry" class="hover:text-sunset-orange transition">Ferry Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <p class="text-gray-100 text-sm mb-2"><i class="fas fa-phone mr-2"></i> +91 9531671758</p>
+                <p class="text-gray-100 text-sm mb-2"><i class="fas fa-envelope mr-2"></i> hello@gohavelock.com</p>
+                <p class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Govind Nagar, Havelock Island</p>
+            </div>
+        </div>
+        <div class="border-t border-white/20 mt-8 pt-8 text-center text-xs text-gray-200">
+            © 2026 Go Havelock. All rights reserved.
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
