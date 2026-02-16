@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const activitiesDB = {
         'scuba': {
-            title: "Scuba Diving (Shore/Boat)",
+            title: "Boat Scuba Diving",
             price: "3,500",
             unit: "/ person",
-            duration: "3 Hours",
-            location: "Nemo Reef / Tribe Gate",
+            duration: "2 Hours",
+            location: "Tribe Gate",
             type: "Water Adventure",
             img: "https://images.unsplash.com/photo-1544551763-46a875657c37?q=80&w=2070",
             description: "Experience the thrill of breathing underwater in one of the world's most beautiful archipelagos. This program is specifically designed for beginners and non-swimmers. You will be accompanied by a dedicated PADI certified instructor who will guide you through the vibrant coral reefs.",
             itinerary: [
                 "Hotel pickup and transfer to the dive center.",
-                "20-minute training session on breathing techniques and hand signals.",
-                "Gear up (Wetsuit, BCD, Fins, Mask).",
-                "Assisted underwater dive for 30-45 minutes.",
+                "30-minute training session on breathing techniques and hand signals.",
+                "Gear up (Wetsuit, BCD, Mask).",
+                "Assisted underwater dive for 25-30 minutes.",
                 "Complimentary underwater photos and video session.",
                 "Drop back to hotel."
             ],
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'snorkeling': {
             title: "Guided Snorkeling Trip",
-            price: "1,000",
+            price: "2,000",
             unit: "/ person",
             duration: "2 Hours",
-            location: "Elephant Beach",
+            location: "Tribe Gate",
             type: "Water Sport",
             img: "https://images.unsplash.com/photo-1544551763-46a875657c37?auto=format&fit=crop&w=1200",
             description: "Float effortlessly above the colorful reef gardens of Elephant Beach. Our guided snorkeling trips ensure you see the best marine life while staying safe on the surface. Perfect for families and children.",
@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'parasailing': {
             title: "Parasailing Adventure",
-            price: "3,000",
+            price: "3,500",
             unit: "/ person",
-            duration: "10-15 Mins",
-            location: "Elephant Beach / Kalapathar",
+            duration: "20 Mins",
+            location: "Elephant Beach",
             type: "Air Adventure",
             img: "https://images.unsplash.com/photo-1606036881269-79a4d852db2b?auto=format&fit=crop&w=1200",
             description: "Get a bird's eye view of the stunning Havelock coastline. You will be towed behind a speed boat while attached to a parachute, soaring high above the turquoise waters.",
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Comfortable clothes", "Sunglasses", "Camera"]
         },
         'kayak': {
-            title: "Night Kayaking (Bioluminescence)",
+            title: "Night Kayaking",
             price: "2,500",
             unit: "/ person",
             duration: "2 Hours",
@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'dinner': {
             title: "Candle Light Dinner",
-            price: "4,000",
+            price: "2,500",
             unit: "/ couple",
-            duration: "3 Hours",
+            duration: "2.5 Hours",
             location: "Beach No. 3 / 5",
             type: "Romantic",
             img: "https://images.unsplash.com/photo-1515443961218-a51367130e69?auto=format&fit=crop&w=1200",
@@ -121,10 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'cruise': {
             title: "Dinner Cruise Party",
-            price: "3,000",
+            price: "3,500",
             unit: "/ person",
             duration: "3 Hours",
-            location: "Port Blair / Havelock",
+            location: "Havelock",
             type: "Luxury / Party",
             img: "https://images.unsplash.com/photo-1545167496-c0d5885ee067?auto=format&fit=crop&w=1200",
             description: "A luxury floating experience. Enjoy live music, a lavish buffet dinner, and an open deck party as you sail through the islands under the stars.",
@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'submarine': {
             title: "Coral Safari (Semi-Submarine)",
-            price: "2,500",
+            price: "3,500",
             unit: "/ person",
-            duration: "2 Hours",
+            duration: "1 Hours",
             location: "Elephant Beach",
             type: "Family Friendly",
             img: "https://images.unsplash.com/photo-1585822765324-4235226c6d0d?auto=format&fit=crop&w=1200",
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Guided Stargazing",
             price: "1,500",
             unit: "/ person",
-            duration: "1 Hour",
+            duration: "30 Mins",
             location: "Dark Sky Zone",
             type: "Educational",
             img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200",
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'resort': {
             title: "Luxury Resort Booking",
-            price: "5,000",
+            price: "4,000",
             unit: "/ night starts from",
             duration: "Per Night",
             location: "Island Wide",
@@ -180,8 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["ID Proofs"]
         },
         'cabs': {
-            title: "Car Rental & Cab Services",
-            price: "800",
+            title: "Car Rental & Cabs",
+            price: "500",
             unit: "/ trip starts from",
             duration: "Flexible",
             location: "Island Wide",
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["ID Proofs", "Soft copy of ticket"]
         },
         'events': {
-            title: "Event Hosting & Weddings",
+            title: "Event Hosting",
             price: "Custom",
             unit: " Package",
             duration: "Custom",
