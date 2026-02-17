@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2 Hours",
             location: "Tribe Gate",
             type: "Water Adventure",
-            img: "https://images.unsplash.com/photo-1544551763-46a875657c37?q=80&w=2070",
+            img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070",
             description: "Experience the thrill of breathing underwater in one of the world's most beautiful archipelagos. This program is specifically designed for beginners and non-swimmers. You will be accompanied by a dedicated PADI certified instructor who will guide you through the vibrant coral reefs.",
             itinerary: [
                 "Hotel pickup and transfer to the dive center.",
