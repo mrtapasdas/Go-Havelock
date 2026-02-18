@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2 Hours",
             location: "Tribe Gate",
             type: "Water Sport",
-            img: "https://images.unsplash.com/photo-1544551763-46a875657c37?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1664922114319-4700c0ef74b1?auto=format&fit=crop&w=1200",
             description: "Float effortlessly above the colorful reef gardens of Elephant Beach. Our guided snorkeling trips ensure you see the best marine life while staying safe on the surface. Perfect for families and children.",
             itinerary: ["Boat ride to snorkeling spot", "Briefing on using the snorkel mask", "Guided snorkeling session (30 mins)", "Refreshments"],
             carry: ["Swimwear", "Towel", "Water Bottle", "Sunglasses"]
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "45 Mins",
             location: "Elephant Beach",
             type: "Unique Adventure",
-            img: "https://images.unsplash.com/photo-1533577116850-9cc66dad8a95?auto=format&fit=crop&w=1200",
+            img: "https://i.pinimg.com/1200x/ba/36/8b/ba368bb24cab5833ae6edbcd07c4ca50.jpg?auto=format&fit=crop&w=1200",
             description: "Walk on the ocean floor just like you walk on land! Wearing a specially designed helmet that supplies oxygen, you can witness the marine life up close without any swimming skills or heavy gear.",
             itinerary: ["Boat transfer to Sea Walk pontoon", "Helmet fitting and safety briefing", "Descent to ocean floor (6-7 meters)", "20 minutes of sea walking", "Photos included"],
             carry: ["Change of clothes", "Towel"]
