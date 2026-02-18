@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const activitiesDB = {
         'scuba': {
             title: "Boat Scuba Diving",
-            price: "3,500",
+            price: "2,500",
             unit: "/ person",
             duration: "2 Hours",
             location: "Tribe Gate",
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Swimwear or t-shirt/shorts", "Towel", "Sunscreen", "Pendrive/Phone for photos"]
         },
         'snorkeling': {
-            title: "Guided Snorkeling Trip",
+            title: "Snorkeling Trip",
             price: "2,000",
             unit: "/ person",
             duration: "2 Hours",
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Note pad", "Swimwear", "Medical declaration"]
         },
         'hopping': {
-            title: "Private Island Hopping",
+            title: "Island Hopping",
             price: "18,000",
             unit: "/ boat (max 6 pax)",
             duration: "Full Day",
@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Sunscreen", "Hats", "Sunglasses", "Snacks"]
         },
         'fishing': {
-            title: "Game Fishing / Angling",
+            title: "Game Fishing",
             price: "12,000",
             unit: "/ boat",
-            duration: "4 Hours",
+            duration: "4-6 Hours",
             location: "Deep Sea",
             type: "Adventure",
             img: "https://images.unsplash.com/photo-1551942296-97384c850440?auto=format&fit=crop&w=1200",
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Party wear", "Camera"]
         },
         'submarine': {
-            title: "Coral Safari (Semi-Submarine)",
+            title: "Coral Safari Submarine",
             price: "3,500",
             unit: "/ person",
             duration: "1 Hours",
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'stargazing': {
             title: "Guided Stargazing",
-            price: "1,500",
+            price: "1,000",
             unit: "/ person",
             duration: "30 Mins",
             location: "Dark Sky Zone",
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["ID Proofs"]
         },
         'cabs': {
-            title: "Car Rental & Cabs",
+            title: "Car Rentals & Cabs",
             price: "500",
             unit: "/ trip starts from",
             duration: "Flexible",
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Guest List"]
         },
         'food': {
-            title: "Food Ordering & Delivery",
+            title: "Food Ordering",
             price: "500",
             unit: " min order",
             duration: "45 Mins",
