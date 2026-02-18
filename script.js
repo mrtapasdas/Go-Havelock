@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Change of clothes", "Towel"]
         },
         'parasailing': {
-            title: "Parasailing Adventure",
+            title: "Parasailing",
             price: "3,500",
             unit: "/ person",
             duration: "20 Mins",
