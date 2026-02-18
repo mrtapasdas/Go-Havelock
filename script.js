@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 6. Typing Animation Logic
+    // 6. Typing Animation Logic (FIXED)
     // ==========================================
     const typingElement = document.getElementById('typing-text');
     if (typingElement) {
@@ -404,16 +404,34 @@ document.addEventListener('DOMContentLoaded', () => {
         
         function typeEffect() {
             const currentPhrase = phrases[phraseIndex];
+            
             if (isDeleting) {
-                typingElement.textContent = currentPhrase.substring(0, charIndex--);
-                if (charIndex < 0) { isDeleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; setTimeout(typeEffect, 500); }
-                else setTimeout(typeEffect, 50);
+                // Deleting text
+                typingElement.textContent = currentPhrase.substring(0, charIndex);
+                charIndex--;
+
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    setTimeout(typeEffect, 500); // Wait before typing next
+                } else {
+                    setTimeout(typeEffect, 50); // Deleting speed
+                }
             } else {
-                typingElement.textContent = currentPhrase.substring(0, charIndex++);
-                if (charIndex === currentPhrase.length) { isDeleting = true; setTimeout(typeEffect, 2000); }
-                else setTimeout(typeEffect, 100);
+                // Typing text
+                // FIX: Added +1 to substring so the current char is included before check
+                typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 2000); // Pause at end of phrase
+                } else {
+                    setTimeout(typeEffect, 100); // Typing speed
+                }
             }
         }
+        
         typeEffect();
     }
 });
