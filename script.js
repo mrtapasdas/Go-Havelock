@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Hotel pickup and transfer to the dive center.",
                 "30-minute training session on breathing techniques and hand signals.",
                 "Gear up (Wetsuit, BCD, Mask).",
+                "Boat ride to snorkeling spot", 
+                "Upto 12 Meter Depth.",
                 "Assisted underwater dive for 25-30 minutes.",
                 "Complimentary underwater photos and video session.",
                 "Drop back to hotel."
@@ -32,8 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Water Sport",
             img: "https://images.unsplash.com/photo-1664922114319-4700c0ef74b1?auto=format&fit=crop&w=1200",
             description: "Float effortlessly above the colorful reef gardens of Elephant Beach. Our guided snorkeling trips ensure you see the best marine life while staying safe on the surface. Perfect for families and children.",
-            itinerary: ["Boat ride to snorkeling spot", "Briefing on using the snorkel mask", "Guided snorkeling session (30 mins)", "Refreshments"],
-            carry: ["Swimwear", "Towel", "Water Bottle", "Sunglasses"]
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Boat ride to snorkeling spot", "Briefing on using the snorkel mask", "Guided snorkeling session (30 mins)", "Complimentary underwater photos and video session.",
+                "Drop back to hotel."],
+            carry: ["Swimwear or t-shirt/shorts", "Towel", "Sunscreen", "Pendrive/Phone for photos"]
         },
         'seawalk': {
             title: "Undersea Walking",
