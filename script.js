@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'stargazing': {
             title: "Guided Stargazing",
-            price: "1,000",
+            price: "2,500",
             unit: "/ person",
             duration: "30 Mins",
             location: "Dark Sky Zone",
