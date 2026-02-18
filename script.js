@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "20 Mins",
             location: "Elephant Beach",
             type: "Air Adventure",
-            img: "https://images.unsplash.com/photo-1606036881269-79a4d852db2b?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1632904074880-b77f02b6d01e?auto=format&fit=crop&w=1200",
             description: "Get a bird's eye view of the stunning Havelock coastline. You will be towed behind a speed boat while attached to a parachute, soaring high above the turquoise waters.",
             itinerary: ["Speed boat transfer to parasailing station", "Safety harness fitting", "Launch from boat deck", "Air time approx 3-5 minutes", "Safe landing on boat"],
             carry: ["Comfortable clothes", "Sunglasses", "Camera"]
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2 Hours",
             location: "Mangroves",
             type: "Night Activity",
-            img: "https://images.unsplash.com/photo-1541829629-9e8c459d9d4a?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1588472235276-7638965471e2?auto=format&fit=crop&w=1200",
             description: "Paddle through the silent mangroves under a canopy of stars. As you disturb the water, watch it glow with magical blue bioluminescence—a natural phenomenon you have to see to believe.",
             itinerary: ["Training on paddling techniques", "Guided tour through mangrove channels", "Star gazing break", "Experience bioluminescence (subject to moon phase)"],
             carry: ["Mosquito repellent", "Water bottle", "Quick-dry clothes"]
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2-4 Days",
             location: "Dive Center",
             type: "Certification",
-            img: "https://images.unsplash.com/photo-1582269222409-90696eb646f8?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1682687982167-d7fb3ed8541d?auto=format&fit=crop&w=1200",
             description: "Transform from a beginner to a certified diver. We offer PADI Open Water, Advanced Open Water, and Rescue Diver courses. Includes theory, confined water training, and open water dives.",
             itinerary: ["Day 1: Theory & Pool Session", "Day 2: 2 Open Water Dives (12m)", "Day 3 (for OWD): 2 Open Water Dives (18m) & Exam", "PADI Certification Card"],
             carry: ["Note pad", "Swimwear", "Medical declaration"]
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "Full Day",
             location: "Neil / Peel / Wilson",
             type: "Luxury Tour",
-            img: "https://images.unsplash.com/photo-1596423985392-32b047514782?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1521650559166-6b588715bc62?auto=format&fit=crop&w=1200",
             description: "Rent a private speed boat and explore the uninhabited islands around Havelock. Visit Neil Island, the lighthouse, or pristine sandbars that are inaccessible by regular ferries.",
             itinerary: ["Private boat charter", "Customized itinerary", "Snorkeling stops at untouched reefs", "Picnic lunch (on request)"],
             carry: ["Sunscreen", "Hats", "Sunglasses", "Snacks"]
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "4 Hours",
             location: "Deep Sea",
             type: "Adventure",
-            img: "https://images.unsplash.com/photo-1544098939-2d174668db78?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1551942296-97384c850440?auto=format&fit=crop&w=1200",
             description: "Join our expert anglers for a deep sea fishing expedition. Trolling, popping, or jigging—we provide professional equipment and guidance to help you catch GT, Tuna, or Barracuda.",
             itinerary: ["Departure at 5 AM or 2 PM", "Travel to fishing grounds", "Fishing session with guidance", "Keep your catch (optional)"],
             carry: ["Hat", "Sunscreen", "Sea sickness pills"]
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2.5 Hours",
             location: "Beach No. 3 / 5",
             type: "Romantic",
-            img: "https://images.unsplash.com/photo-1515443961218-a51367130e69?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1529516222410-a269d812f320?auto=format&fit=crop&w=1200",
             description: "Celebrate love with a private candle light dinner on the beach. Enjoy a 4-course meal, flower decoration, and the soothing sound of waves under the moonlight.",
             itinerary: ["Reserved beachside table", "Flower decoration & candles", "Welcome drink", "4-course meal (Veg/Non-Veg)", "Personal butler service"],
             carry: ["Smart casuals", "Camera"]
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "3 Hours",
             location: "Havelock",
             type: "Luxury / Party",
-            img: "https://images.unsplash.com/photo-1545167496-c0d5885ee067?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1667412319085-144022cc8df6?auto=format&fit=crop&w=1200",
             description: "A luxury floating experience. Enjoy live music, a lavish buffet dinner, and an open deck party as you sail through the islands under the stars.",
             itinerary: ["Boarding at 6:30 PM", "Live music/DJ performance", "Sailing around the bay", "Buffet dinner served", "Return to jetty"],
             carry: ["Party wear", "Camera"]
