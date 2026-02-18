@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "1 Hours",
             location: "Elephant Beach",
             type: "Family Friendly",
-            img: "https://images.unsplash.com/photo-1585822765324-4235226c6d0d?auto=format&fit=crop&w=1200",
+            img: "https://i.pinimg.com/736x/61/0a/7a/610a7a9d349e5140ec163af9bc0bd469.jpg?auto=format&fit=crop&w=1200",
             description: "Perfect for kids and elders. Sit in an air-conditioned cabin with large glass windows that is submerged underwater, offering a diver's view of the reef without getting wet.",
             itinerary: ["Transfer to the submarine", "45-minute underwater viewing", "Fish feeding observation", "Return to shore"],
             carry: ["Comfortable clothes", "Camera"]
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "15 Mins",
             location: "Water Sports Complex",
             type: "Thrill",
-            img: "https://images.unsplash.com/photo-1564353597449-7e7745778a70?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1584212893031-410e387fbaf1?auto=format&fit=crop&w=1200",
             description: "Feel the wind in your hair with a high-speed boat ride. A quick adrenaline fix that cuts through the waves and offers sharp turns and splashes.",
             itinerary: ["Life jacket fitting", "High speed run", "Sharp turns and maneuvers", "Return to jetty"],
             carry: ["Waterproof pouch for phone", "Sunglasses"]
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "30 Mins",
             location: "Dark Sky Zone",
             type: "Educational",
-            img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1527871899604-f1425bcce779?auto=format&fit=crop&w=1200",
             description: "The Andamans offer some of the darkest skies in India. Look through a powerful telescope to see Jupiter's rings, nebulas, and galaxies, guided by an astronomy expert.",
             itinerary: ["Travel to dark location", "Introduction to constellations", "Telescope viewing session", "Mythology and science stories"],
             carry: ["Light jacket (can be breezy)", "Mosquito repellent"]
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "Instant",
             location: "Inter-Island",
             type: "Transport",
-            img: "https://images.unsplash.com/photo-1534959345938-23f26ac4352a?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1567790405615-3a623ce0adb1?auto=format&fit=crop&w=1200",
             description: "Skip the queues and let us book your Makruzz, Nautika, or Green Ocean ferry tickets. We ensure you get the best seats and window views.",
             itinerary: ["Select Ferry (Makruzz/Nautika)", "Provide passenger details", "Receive PDF ticket on WhatsApp"],
             carry: ["ID Proofs", "Soft copy of ticket"]
