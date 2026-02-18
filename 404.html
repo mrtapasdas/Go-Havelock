@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Lost at Sea | Havelock Island Adventures</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23008080%22/><text x=%2250%25%22 y=%2255%25%22 dy=%22.1em%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-weight=%22900%22 font-size=%2260%22 fill=%22%23FF7F50%22>Go</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ocean-teal': '#008080',
+                        'sand-beige': '#F5F5DC',
+                        'sunset-orange': '#FF7F50',
+                        'deep-blue': '#003366',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'heading': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-2 px-6 md:px-12 bg-ocean-teal shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
+                <span class="text-sunset-orange">Go </span>Havelock
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-white font-medium hover:text-sunset-orange transition">Home</a>
+                <a href="index.html#activities" class="text-white font-medium hover:text-sunset-orange transition">Activities</a>
+                <a href="index.html#about" class="text-white font-medium hover:text-sunset-orange transition">About</a>
+                <a href="index.html#contact-section" class="text-white font-medium hover:text-sunset-orange transition">Contact Us</a>
+                <a href="index.html#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-heading font-semibold text-sm transition-all shadow-lg hover:-translate-y-0.5">
+                    Book Now
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-ocean-teal shadow-xl py-8 flex-col items-center space-y-6 md:hidden border-t border-white/10">
+            <a href="index.html" class="text-white text-lg font-medium hover:text-sunset-orange transition">Home</a>
+            <a href="index.html#activities" class="text-white text-lg font-medium hover:text-sunset-orange transition">Activities</a>
+            <a href="index.html#about" class="text-white text-lg font-medium hover:text-sunset-orange transition">About</a>
+            <a href="index.html#contact-section" class="text-white text-lg font-medium hover:text-sunset-orange transition">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center pt-20 px-6">
+        <div class="text-center max-w-2xl mx-auto">
+            <div class="relative w-64 h-64 mx-auto mb-8 opacity-90">
+                <i class="fas fa-water text-ocean-teal text-9xl absolute bottom-0 left-0 animate-pulse"></i>
+                <i class="fas fa-life-ring text-sunset-orange text-6xl absolute top-10 right-10 animate-bounce-slow"></i>
+                <span class="text-9xl font-bold text-gray-200 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10">404</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-ocean-teal mb-4">Looks Like You're Lost at Sea!</h1>
+            <p class="text-gray-600 text-lg mb-8">The page you are looking for has drifted away or doesn't exist. Don't worry, let's get you back to the shore.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html" class="bg-ocean-teal hover:bg-teal-700 text-white px-8 py-3 rounded-full font-bold shadow-lg transition transform hover:-translate-y-1">
+                    <i class="fas fa-home mr-2"></i> Return Home
+                </a>
+                <a href="index.html#activities" class="border border-ocean-teal text-ocean-teal hover:bg-ocean-teal hover:text-white px-8 py-3 rounded-full font-bold shadow-sm transition">
+                    Explore Activities
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-ocean-teal text-white py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-2xl font-heading font-bold mb-4"><span class="text-sunset-orange">Go </span>Havelock</h3>
+                <p class="text-gray-100 text-sm">Your gateway to the Andaman Islands. Authorized adventure sports provider.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-100">
+                    <li><a href="index.html#about" class="hover:text-sunset-orange transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">Gallery</a></li>
+                    <li><a href="index.html#contact-section" class="hover:text-sunset-orange transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Popular Activities</h4>
+                <ul class="space-y-2 text-sm text-gray-100">
+                    <li><a href="activity-detail.html?id=scuba" class="hover:text-sunset-orange transition">Scuba Diving</a></li>
+                    <li><a href="activity-detail.html?id=kayak" class="hover:text-sunset-orange transition">Night Kayaking</a></li>
+                    <li><a href="activity-detail.html?id=ferry" class="hover:text-sunset-orange transition">Ferry Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <p class="text-gray-100 text-sm mb-2"><i class="fas fa-phone mr-2"></i> +91 9531671758</p>
+                <p class="text-gray-100 text-sm mb-2"><i class="fas fa-envelope mr-2"></i> hello@gohavelock.com</p>
+                <p class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Govind Nagar, Havelock Island</p>
+            </div>
+        </div>
+        <div class="border-t border-white/20 mt-8 pt-8 text-center text-xs text-gray-200">
+            © 2026 Go Havelock. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
+    </script>
+</body>
+</html>
