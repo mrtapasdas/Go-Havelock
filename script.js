@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 0. ACTIVITIES DATABASE (The Content Source)
     // ==========================================
     const activitiesDB = {
-        'scuba': {
+        'boat-scuba-diving': {
             title: "Boat Scuba Diving",
             price: "2,500",
             unit: "/ person",
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             carry: ["Swimwear or t-shirt/shorts", "Towel", "Sunscreen", "Pendrive/Phone for photos"]
         },
-        'snorkeling': {
+        'snorkeling-trips': {
             title: "Snorkeling Trip",
             price: "2,000",
             unit: "/ person",
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Drop back to hotel."],
             carry: ["Swimwear or t-shirt/shorts", "Towel", "Sunscreen", "Pendrive/Phone for photos"]
         },
-        'seawalk': {
+        'undersea-walking': {
             title: "Undersea Walking",
             price: "3,500",
             unit: "/ person",
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Speed boat transfer to parasailing station", "Safety harness fitting", "Launch from boat deck", "Air time approx 3-5 minutes", "Safe landing on boat"],
             carry: ["Comfortable clothes", "Sunglasses", "Camera"]
         },
-        'kayak': {
+        'night-kayaking': {
             title: "Night Kayaking",
             price: "2,500",
             unit: "/ person",
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Training on paddling techniques", "Guided tour through mangrove channels", "Star gazing break", "Experience bioluminescence (subject to moon phase)"],
             carry: ["Mosquito repellent", "Water bottle", "Quick-dry clothes"]
         },
-        'course': {
+        'diving-courses': {
             title: "PADI Diving Courses",
             price: "15,000",
             unit: "/ course starts at",
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Day 1: Theory & Pool Session", "Day 2: 2 Open Water Dives (12m)", "Day 3 (for OWD): 2 Open Water Dives (18m) & Exam", "PADI Certification Card"],
             carry: ["Note pad", "Swimwear", "Medical declaration"]
         },
-        'hopping': {
+        'island-hopping': {
             title: "Island Hopping",
             price: "18,000",
             unit: "/ boat (max 6 pax)",
@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Private boat charter", "Customized itinerary", "Snorkeling stops at untouched reefs", "Picnic lunch (on request)"],
             carry: ["Sunscreen", "Hats", "Sunglasses", "Snacks"]
         },
-        'fishing': {
-            title: "Game Fishing",
+        'boat-fishing': {
+            title: "Boat Fishing",
             price: "12,000",
             unit: "/ boat",
             duration: "4-6 Hours",
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Departure at 5 AM or 2 PM", "Travel to fishing grounds", "Fishing session with guidance", "Keep your catch (optional)"],
             carry: ["Hat", "Sunscreen", "Sea sickness pills"]
         },
-        'dinner': {
+        'candle-light-dinner': {
             title: "Candle Light Dinner",
             price: "2,500",
             unit: "/ couple",
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Reserved beachside table", "Flower decoration & candles", "Welcome drink", "4-course meal (Veg/Non-Veg)", "Personal butler service"],
             carry: ["Smart casuals", "Camera"]
         },
-        'cruise': {
+        'dinner-cruise-party': {
             title: "Dinner Cruise Party",
             price: "3,500",
             unit: "/ person",
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Boarding at 6:30 PM", "Live music/DJ performance", "Sailing around the bay", "Buffet dinner served", "Return to jetty"],
             carry: ["Party wear", "Camera"]
         },
-        'submarine': {
+        'semi-submarine': {
             title: "Coral Safari Submarine",
             price: "3,500",
             unit: "/ person",
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Transfer to the submarine", "45-minute underwater viewing", "Fish feeding observation", "Return to shore"],
             carry: ["Comfortable clothes", "Camera"]
         },
-        'speedboat': {
+        'speedboat-ride': {
             title: "Speed Boat Ride",
             price: "1,000",
             unit: "/ person",
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Travel to dark location", "Introduction to constellations", "Telescope viewing session", "Mythology and science stories"],
             carry: ["Light jacket (can be breezy)", "Mosquito repellent"]
         },
-        'resort': {
+        'resort-booking': {
             title: "Luxury Resort Booking",
             price: "4,000",
             unit: "/ night starts from",
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Consultation on budget", "Selection of property", "Booking confirmation voucher", "Special honeymoon inclusions (optional)"],
             carry: ["ID Proofs"]
         },
-        'cabs': {
+        'cab-rentals': {
             title: "Car Rentals & Cabs",
             price: "500",
             unit: "/ trip starts from",
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Pick up from Jetty/Hotel", "Drop to Radhanagar/Kalapathar", "Waiting charges applicable for return trips"],
             carry: ["Details of pick-up location"]
         },
-        'ferry': {
+        'ferry-ticket-booking': {
             title: "Ferry Ticket Booking",
             price: "200",
             unit: " service fee",
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Select Ferry (Makruzz/Nautika)", "Provide passenger details", "Receive PDF ticket on WhatsApp"],
             carry: ["ID Proofs", "Soft copy of ticket"]
         },
-        'events': {
+        'event-hosting': {
             title: "Event Hosting",
             price: "Custom",
             unit: " Package",
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Initial Consultation", "Venue Selection", "Decor & Food tasting", "Event Management"],
             carry: ["Guest List"]
         },
-        'food': {
+        'food-ordering': {
             title: "Food Ordering",
             price: "500",
             unit: " min order",
