@@ -12,22 +12,22 @@
         <priority>0.8</priority>
     </url>
 
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=scuba</loc><priority>0.9</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=boat-scuba-diving</loc><priority>0.9</priority></url>
     <url><loc>https://www.gohavelock.com/activity-detail.html?id=snorkeling</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=seawalk</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=undersea-walking</loc><priority>0.8</priority></url>
     <url><loc>https://www.gohavelock.com/activity-detail.html?id=parasailing</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=kayak</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=course</loc><priority>0.7</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=hopping</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=fishing</loc><priority>0.7</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=dinner</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=cruise</loc><priority>0.7</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=submarine</loc><priority>0.7</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=speedboat</loc><priority>0.7</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=night-kayaking</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=diving-courses</loc><priority>0.7</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=island-hopping</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=boat-fishing</loc><priority>0.7</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=candle-light-dinner</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=dinner-cruise-party</loc><priority>0.7</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=semi-submarine</loc><priority>0.7</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=speedboat-ride</loc><priority>0.7</priority></url>
     <url><loc>https://www.gohavelock.com/activity-detail.html?id=stargazing</loc><priority>0.6</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=resort</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=cabs</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=ferry</loc><priority>0.8</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=events</loc><priority>0.6</priority></url>
-    <url><loc>https://www.gohavelock.com/activity-detail.html?id=food</loc><priority>0.6</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=resort-booking</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=cab-rentals</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=ferry-ticket-booking</loc><priority>0.8</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=event-hosting</loc><priority>0.6</priority></url>
+    <url><loc>https://www.gohavelock.com/activity-detail.html?id=food-ordering</loc><priority>0.6</priority></url>
 </urlset>
