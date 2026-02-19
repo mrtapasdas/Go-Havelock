@@ -37,33 +37,33 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Boat ride to snorkeling station", "Briefing on snorkel usage", "Guided snorkeling session (30 mins)", "Refreshments and return"],
             carry: ["Swimwear", "Towel", "Water Bottle", "Sunglasses"]
         },
-        'seawalk': {
+        'undersea-walking': {
             title: "Undersea Walk on the Ocean Floor",
-            seo_title: "Sea Walk Havelock Island | Elephant Beach Adventure",
+            seo_title: "UnderSea Walking Havelock Island",
             price: "3,500",
             unit: "/ person",
             duration: "45 Mins",
             location: "Elephant Beach",
             type: "Unique Adventure",
-            img: "https://images.unsplash.com/photo-1533577116850-9cc66dad8a95?auto=format&fit=crop&w=1200",
+            img: "https://i.pinimg.com/1200x/ba/36/8b/ba368bb24cab5833ae6edbcd07c4ca50.jpg?auto=format&fit=crop&w=1200",
             description: "No swimming skills? No problem! Try the famous Sea Walk in Havelock. Wear a helmet and walk on the sea bed surrounded by marine life at Elephant Beach.",
             itinerary: ["Speed boat transfer to Sea Walk pontoon", "Helmet fitting and safety briefing", "Descent to 6 meters depth", "20 minutes of underwater walking", "Photos included"],
             carry: ["Change of clothes", "Towel"]
         },
         'parasailing': {
             title: "Parasailing in Havelock | Fly High Above the Sea",
-            seo_title: "Parasailing Adventure Havelock | Elephant Beach",
-            price: "3,000",
+            seo_title: "Parasailing Adventure in Havelock Island",
+            price: "3,500",
             unit: "/ person",
-            duration: "10-15 Mins",
-            location: "Elephant Beach / Kalapathar",
+            duration: "20 Mins",
+            location: "Elephant Beach",
             type: "Air Adventure",
-            img: "https://images.unsplash.com/photo-1606036881269-79a4d852db2b?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1632904074880-b77f02b6d01e?auto=format&fit=crop&w=1200",
             description: "Get a bird's eye view of the stunning Andaman coastline. Parasailing in Havelock offers a thrilling aerial experience towed behind a high-speed boat.",
             itinerary: ["Transfer to parasailing boat", "Safety harness setup", "Launch from boat deck", "Air time approx 3-5 minutes", "Safe landing on boat"],
             carry: ["Comfortable clothes", "Sunglasses", "Camera"]
         },
-        'kayak': {
+        'night-kayaking': {
             title: "Night Kayaking with Bioluminescence",
             seo_title: "Night Kayaking Havelock | Bioluminescence Tour",
             price: "2,500",
@@ -71,20 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "2 Hours",
             location: "Mangroves",
             type: "Night Activity",
-            img: "https://images.unsplash.com/photo-1541829629-9e8c459d9d4a?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1588472235276-7638965471e2?auto=format&fit=crop&w=1200",
             description: "Witness the magical glow of the ocean. Our Night Kayaking tour takes you through the silent mangroves where the water sparkles with blue bioluminescence.",
             itinerary: ["Training on paddling", "Guided tour through mangrove channels", "Star gazing session", "Experience bioluminescence (best during no moon)"],
             carry: ["Mosquito repellent", "Water bottle", "Quick-dry clothes"]
         },
-        'course': {
-            title: "PADI Scuba Diving Courses | Open Water Certification",
-            seo_title: "PADI Diving Courses Havelock | Learn to Dive",
+        'diving-courses': {
+            title: "PADI Scuba Diving Courses",
+            seo_title: "PADI Diving Courses in Havelock Island",
             price: "15,000",
             unit: "/ course starts at",
             duration: "2-4 Days",
             location: "Dive Center",
             type: "Certification",
-            img: "https://images.unsplash.com/photo-1582269222409-90696eb646f8?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1682687982167-d7fb3ed8541d?auto=format&fit=crop&w=1200",
             description: "Become a certified diver in the Andamans. We offer PADI Open Water, Advanced, and Rescue Diver courses with international certification valid worldwide.",
             itinerary: ["Day 1: Theory & Confined Water", "Day 2: 2 Open Water Dives", "Day 3 (OWD): 2 Open Water Dives & Exam", "Certification Card"],
             carry: ["Note pad", "Swimwear", "Medical declaration"]
