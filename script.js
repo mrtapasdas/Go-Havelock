@@ -4,41 +4,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // 0. ACTIVITIES DATABASE (SEO Optimized)
     // ==========================================
     const activitiesDB = {
-        'scuba': {
-            title: "Boat Scuba Diving in Havelock | Best Price & PADI Pros",
-            seo_title: "Scuba Diving Havelock Island | Boat & Shore Dives",
-            price: "3,500",
+        'boat-scuba-diving': {
+            title: "Boat Scuba Diving in Havelock Island",
+            seo_title: "Scuba Diving Havelock Island",
+            price: "3,000",
             unit: "/ person",
-            duration: "3 Hours",
-            location: "Nemo Reef / Tribe Gate",
+            duration: "2 Hours",
+            location: "Tribe Gate",
             type: "Water Adventure",
-            img: "https://images.unsplash.com/photo-1544551763-46a875657c37?q=80&w=2070",
+            img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070",
             description: "Book the best Scuba Diving experience in Havelock Island. Explore the vibrant coral reefs of Nemo Reef with PADI certified instructors. Perfect for beginners and non-swimmers. Includes photos, video, and full safety gear.",
             itinerary: [
                 "Hotel pickup and transfer to the dive center.",
-                "20-minute training on breathing techniques and hand signals.",
+                "30-minute training on breathing techniques and hand signals.",
                 "Boat ride to the exclusive dive spot.",
-                "Assisted underwater dive (up to 12m depth) for 45 minutes.",
+                "Assisted underwater dive (up to 12m depth) for 30 minutes.",
                 "Complimentary HD underwater photos and videos.",
                 "Drop back to hotel."
             ],
             carry: ["Swimwear or t-shirt/shorts", "Towel", "Sunscreen", "Pendrive/Phone for photos"]
         },
         'snorkeling': {
-            title: "Guided Snorkeling at Elephant Beach | Havelock",
-            seo_title: "Snorkeling Trips Elephant Beach | Havelock Island",
-            price: "1,000",
+            title: "Guided Snorkeling at Havelock Island",
+            seo_title: "Snorkeling Trips Havelock Island",
+            price: "2,000",
             unit: "/ person",
             duration: "2 Hours",
-            location: "Elephant Beach",
+            location: "Tribe Gate",
             type: "Water Sport",
-            img: "https://images.unsplash.com/photo-1544551763-46a875657c37?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1664922114319-4700c0ef74b1?auto=format&fit=crop&w=1200",
             description: "Experience crystal clear waters with our guided Snorkeling trips at Elephant Beach. Swim with colorful schools of fish and witness live coral reefs. Safe for kids and families.",
             itinerary: ["Boat ride to snorkeling station", "Briefing on snorkel usage", "Guided snorkeling session (30 mins)", "Refreshments and return"],
             carry: ["Swimwear", "Towel", "Water Bottle", "Sunglasses"]
         },
         'seawalk': {
-            title: "Undersea Sea Walk | Walk on the Ocean Floor",
+            title: "Undersea Walk on the Ocean Floor",
             seo_title: "Sea Walk Havelock Island | Elephant Beach Adventure",
             price: "3,500",
             unit: "/ person",
