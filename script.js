@@ -89,101 +89,101 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Day 1: Theory & Confined Water", "Day 2: 2 Open Water Dives", "Day 3 (OWD): 2 Open Water Dives & Exam", "Certification Card"],
             carry: ["Note pad", "Swimwear", "Medical declaration"]
         },
-        'hopping': {
+        'island-hopping': {
             title: "Private Island Hopping Boat Charter",
-            seo_title: "Island Hopping Havelock | Private Boat Tour",
+            seo_title: "Island Hopping in Havelock Island",
             price: "18,000",
             unit: "/ boat (max 6 pax)",
             duration: "Full Day",
             location: "Neil / Peel / Wilson",
             type: "Luxury Tour",
-            img: "https://images.unsplash.com/photo-1596423985392-32b047514782?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1521650559166-6b588715bc62?auto=format&fit=crop&w=1200",
             description: "Rent a private speed boat for a day. Explore uninhabited islands like Peel, Wilson, and John Lawrence. Includes snorkeling gear and a private captain.",
             itinerary: ["Private boat charter", "Visit to hidden beaches", "Snorkeling stops at untouched reefs", "Picnic lunch (on request)"],
             carry: ["Sunscreen", "Hats", "Sunglasses", "Snacks"]
         },
-        'fishing': {
-            title: "Game Fishing & Deep Sea Angling",
-            seo_title: "Game Fishing Havelock | Sport Fishing Charters",
+        'boat-fishing': {
+            title: "Boat Fishing & Deep Sea Angling",
+            seo_title: "Boat Fishing in Havelock Island",
             price: "12,000",
             unit: "/ boat",
-            duration: "4 Hours",
+            duration: "4-6 Hours",
             location: "Deep Sea",
             type: "Adventure",
-            img: "https://images.unsplash.com/photo-1544098939-2d174668db78?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1551942296-97384c850440?auto=format&fit=crop&w=1200",
             description: "Join expert anglers for a deep sea fishing adventure. Target GT, Tuna, and Barracuda with professional equipment. Trolling, popping, and jigging available.",
             itinerary: ["Departure at 5 AM or 2 PM", "Travel to fishing grounds", "Fishing session with guidance", "Keep your catch option"],
             carry: ["Hat", "Sunscreen", "Sea sickness pills"]
         },
-        'dinner': {
+        'candle-light-dinner': {
             title: "Romantic Candle Light Dinner on Beach",
-            seo_title: "Candle Light Dinner Havelock | Beachside Dining",
-            price: "4,000",
+            seo_title: "Candle Light Dinner in Havelock Island",
+            price: "5,000",
             unit: "/ couple",
-            duration: "3 Hours",
+            duration: "2.5 Hours",
             location: "Beach No. 3 / 5",
             type: "Romantic",
-            img: "https://images.unsplash.com/photo-1515443961218-a51367130e69?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1529516222410-a269d812f320?auto=format&fit=crop&w=1200",
             description: "The ultimate romantic experience. A private table on the white sands of Havelock, illuminated by candles and moonlight. 4-course meal and wine included.",
             itinerary: ["Reserved beachside spot", "Flower & Candle decor", "Welcome drink", "4-course meal (Veg/Non-Veg)", "Butler service"],
             carry: ["Smart casuals", "Camera"]
         },
-        'cruise': {
+        'dinner-cruise-party': {
             title: "Luxury Dinner Cruise Party",
-            seo_title: "Dinner Cruise Havelock | Party Boat Andaman",
-            price: "3,000",
+            seo_title: "Dinner Cruise Party in Havelock Island",
+            price: "3,500",
             unit: "/ person",
             duration: "3 Hours",
             location: "Port Blair / Havelock",
             type: "Luxury / Party",
-            img: "https://images.unsplash.com/photo-1545167496-c0d5885ee067?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1667412319085-144022cc8df6?auto=format&fit=crop&w=1200",
             description: "Sail under the stars on a luxury yacht. Enjoy live DJ music, dance on the open deck, and savor a lavish buffet dinner while cruising the archipelago.",
             itinerary: ["Boarding at 6:30 PM", "Live entertainment", "Sailing around the bay", "Buffet dinner", "Return to jetty"],
             carry: ["Party wear", "Camera"]
         },
-        'submarine': {
+        'semi-submarine': {
             title: "Coral Safari Semi-Submarine Ride",
-            seo_title: "Submarine Ride Havelock | Coral Safari",
-            price: "2,500",
+            seo_title: "Submarine Ride in Havelock Island",
+            price: "3,500",
             unit: "/ person",
-            duration: "2 Hours",
+            duration: "1 Hours",
             location: "Elephant Beach",
             type: "Family Friendly",
-            img: "https://images.unsplash.com/photo-1585822765324-4235226c6d0d?auto=format&fit=crop&w=1200",
+            img: "https://i.pinimg.com/736x/61/0a/7a/610a7a9d349e5140ec163af9bc0bd469.jpg?auto=format&fit=crop&w=1200",
             description: "Explore the reef without getting wet! The Coral Safari semi-submarine takes you underwater in an AC cabin with large glass windows. Great for kids and seniors.",
             itinerary: ["Transfer to submarine", "45-minute underwater viewing", "Fish feeding observation", "Return to shore"],
             carry: ["Comfortable clothes", "Camera"]
         },
-        'speedboat': {
+        'speedboat-ride': {
             title: "Thrilling Speed Boat Ride",
-            seo_title: "Speed Boat Ride Havelock | Water Sports",
+            seo_title: "Speed Boat Ride in Havelock Island",
             price: "1,000",
             unit: "/ person",
             duration: "15 Mins",
             location: "Water Sports Complex",
             type: "Thrill",
-            img: "https://images.unsplash.com/photo-1564353597449-7e7745778a70?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1584212893031-410e387fbaf1?auto=format&fit=crop&w=1200",
             description: "Feel the rush of adrenaline as you cut through the waves. A high-speed boat ride full of sharp turns and splashes at Elephant Beach.",
             itinerary: ["Life jacket fitting", "High speed run", "Sharp turns", "Return to jetty"],
             carry: ["Waterproof pouch", "Sunglasses"]
         },
         'stargazing': {
             title: "Guided Stargazing Experience",
-            seo_title: "Stargazing Havelock Island | Astronomy Tour",
-            price: "1,500",
+            seo_title: "Stargazing in Havelock Island",
+            price: "2,500",
             unit: "/ person",
             duration: "1 Hour",
             location: "Dark Sky Zone",
             type: "Educational",
-            img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1527871899604-f1425bcce779?auto=format&fit=crop&w=1200",
             description: "Discover the cosmos from one of the darkest spots in India. View planets, nebulas, and the Milky Way through professional telescopes with an expert guide.",
             itinerary: ["Travel to dark location", "Introduction to constellations", "Telescope viewing", "Mythology and science stories"],
             carry: ["Light jacket", "Mosquito repellent"]
         },
-        'resort': {
+        'resort-booking': {
             title: "Luxury Resort & Hotel Booking",
-            seo_title: "Resort Booking Havelock | Best Hotel Deals",
-            price: "5,000",
+            seo_title: "Resort Booking in Havelock Island",
+            price: "4,000",
             unit: "/ night starts from",
             duration: "Per Night",
             location: "Island Wide",
@@ -193,10 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Consultation", "Property selection", "Booking confirmation", "Honeymoon specials"],
             carry: ["ID Proofs"]
         },
-        'cabs': {
+        'cab-rentals': {
             title: "Car Rental & Taxi Services",
-            seo_title: "Car Rental Havelock | Taxi Service Andaman",
-            price: "800",
+            seo_title: "Car Rental in Havelock Island",
+            price: "500",
             unit: "/ trip starts from",
             duration: "Flexible",
             location: "Island Wide",
@@ -206,22 +206,22 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Pick up from Jetty/Hotel", "Drop to destination", "Waiting charges applicable for return"],
             carry: ["Pickup details"]
         },
-        'ferry': {
+        'ferry-ticket-booking': {
             title: "Ferry Ticket Booking (Makruzz/Nautika)",
-            seo_title: "Ferry Booking Andaman | Makruzz Green Ocean",
+            seo_title: "Ferry Booking in Havelock Island",
             price: "200",
             unit: " service fee",
             duration: "Instant",
             location: "Inter-Island",
             type: "Transport",
-            img: "https://images.unsplash.com/photo-1534959345938-23f26ac4352a?auto=format&fit=crop&w=1200",
+            img: "https://images.unsplash.com/photo-1567790405615-3a623ce0adb1?auto=format&fit=crop&w=1200",
             description: "Official booking partner for Makruzz, Nautika, and Green Ocean ferries. Skip the queue and get your confirmed tickets on WhatsApp.",
             itinerary: ["Select Ferry", "Provide passenger details", "Receive PDF ticket", "Boarding assistance"],
             carry: ["ID Proofs", "Soft copy of ticket"]
         },
-        'events': {
+        'event-hosting': {
             title: "Destination Weddings & Event Hosting",
-            seo_title: "Beach Wedding Havelock | Event Planner Andaman",
+            seo_title: "Beach Event Hosting in Havelock Island",
             price: "Custom",
             unit: " Package",
             duration: "Custom",
@@ -232,9 +232,9 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary: ["Consultation", "Venue Selection", "Decor & Food tasting", "Event Execution"],
             carry: ["Guest List"]
         },
-        'food': {
+        'food-ordering': {
             title: "Food Delivery in Havelock",
-            seo_title: "Food Delivery Havelock | Order Online",
+            seo_title: "Food Booking & Delivery in Havelock Island",
             price: "500",
             unit: " min order",
             duration: "45 Mins",
