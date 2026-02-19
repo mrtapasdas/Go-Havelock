@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Pickup details"]
         },
         'ferry-ticket-booking': {
-            title: "Ferry Ticket Booking (Makruzz/Nautika)",
+            title: "Govt./Private Ferry Ticket Booking",
             seo_title: "Ferry Booking in Havelock Island",
             price: "200",
             unit: " service fee",
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carry: ["Guest List"]
         },
         'food-ordering': {
-            title: "Food Delivery in Havelock",
+            title: "Food Order & Delivery in Havelock",
             seo_title: "Food Booking & Delivery in Havelock Island",
             price: "500",
             unit: " min order",
