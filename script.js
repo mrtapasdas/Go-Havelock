@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Tribe Gate",
             type: "Water Adventure",
             img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070",
-            description: "Book the best Scuba Diving experience in Havelock Island. Explore the vibrant coral reefs of Nemo Reef with PADI certified instructors. Perfect for beginners and non-swimmers. Includes photos, video, and full safety gear.",
+            description: "Book the best Scuba Diving experience in Havelock Island. Explore the vibrant coral reefs of Tribe Gate with PADI certified instructors. Perfect for beginners and non-swimmers. Includes photos, video, and full safety gear.",
             itinerary: [
                 "Hotel pickup and transfer to the dive center.",
                 "30-minute training on breathing techniques and hand signals.",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Water Sport",
             img: "https://images.unsplash.com/photo-1664922114319-4700c0ef74b1?auto=format&fit=crop&w=1200",
             description: "Experience crystal clear waters with our guided Snorkeling trips at Elephant Beach. Swim with colorful schools of fish and witness live coral reefs. Safe for kids and families.",
-            itinerary: ["Boat ride to snorkeling station", "Briefing on snorkel usage", "Guided snorkeling session (30 mins)", "Refreshments and return"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Boat ride to snorkeling station", "Briefing on snorkel usage", "Guided snorkeling session (30 mins)", "Refreshments and return"],
             carry: ["Swimwear", "Towel", "Water Bottle", "Sunglasses"]
         },
         'undersea-walking': {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Night Activity",
             img: "https://images.unsplash.com/photo-1588472235276-7638965471e2?auto=format&fit=crop&w=1200",
             description: "Witness the magical glow of the ocean. Our Night Kayaking tour takes you through the silent mangroves where the water sparkles with blue bioluminescence.",
-            itinerary: ["Training on paddling", "Guided tour through mangrove channels", "Star gazing session", "Experience bioluminescence (best during no moon)"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Training on paddling", "Guided tour through mangrove channels", "Star gazing session", "Experience bioluminescence (best during no moon)"],
             carry: ["Mosquito repellent", "Water bottle", "Quick-dry clothes"]
         },
         'diving-courses': {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Luxury Tour",
             img: "https://images.unsplash.com/photo-1521650559166-6b588715bc62?auto=format&fit=crop&w=1200",
             description: "Rent a private speed boat for a day. Explore uninhabited islands like Peel, Wilson, and John Lawrence. Includes snorkeling gear and a private captain.",
-            itinerary: ["Private boat charter", "Visit to hidden beaches", "Snorkeling stops at untouched reefs", "Picnic lunch (on request)"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Private boat charter", "Visit to hidden beaches", "Snorkeling stops at untouched reefs", "Picnic lunch (on request)"],
             carry: ["Sunscreen", "Hats", "Sunglasses", "Snacks"]
         },
         'boat-fishing': {
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Adventure",
             img: "https://images.unsplash.com/photo-1551942296-97384c850440?auto=format&fit=crop&w=1200",
             description: "Join expert anglers for a deep sea fishing adventure. Target GT, Tuna, and Barracuda with professional equipment. Trolling, popping, and jigging available.",
-            itinerary: ["Departure at 5 AM or 2 PM", "Travel to fishing grounds", "Fishing session with guidance", "Keep your catch option"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Departure at 5 AM or 2 PM", "Travel to fishing grounds", "Fishing session with guidance", "Keep your catch option"],
             carry: ["Hat", "Sunscreen", "Sea sickness pills"]
         },
         'candle-light-dinner': {
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Romantic",
             img: "https://images.unsplash.com/photo-1529516222410-a269d812f320?auto=format&fit=crop&w=1200",
             description: "The ultimate romantic experience. A private table on the white sands of Havelock, illuminated by candles and moonlight. 4-course meal and wine included.",
-            itinerary: ["Reserved beachside spot", "Flower & Candle decor", "Welcome drink", "4-course meal (Veg/Non-Veg)", "Butler service"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Reserved beachside spot", "Flower & Candle decor", "Welcome drink", "4-course meal (Veg/Non-Veg)", "Butler service"],
             carry: ["Smart casuals", "Camera"]
         },
         'dinner-cruise-party': {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Luxury / Party",
             img: "https://images.unsplash.com/photo-1667412319085-144022cc8df6?auto=format&fit=crop&w=1200",
             description: "Sail under the stars on a luxury yacht. Enjoy live DJ music, dance on the open deck, and savor a lavish buffet dinner while cruising the archipelago.",
-            itinerary: ["Boarding at 6:30 PM", "Live entertainment", "Sailing around the bay", "Buffet dinner", "Return to jetty"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Boarding at 6:30 PM", "Live entertainment", "Sailing around the bay", "Buffet dinner", "Return to jetty"],
             carry: ["Party wear", "Camera"]
         },
         'semi-submarine': {
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "Educational",
             img: "https://images.unsplash.com/photo-1527871899604-f1425bcce779?auto=format&fit=crop&w=1200",
             description: "Discover the cosmos from one of the darkest spots in India. View planets, nebulas, and the Milky Way through professional telescopes with an expert guide.",
-            itinerary: ["Travel to dark location", "Introduction to constellations", "Telescope viewing", "Mythology and science stories"],
+            itinerary: ["Hotel pickup and transfer to the dive center.", "Travel to dark location", "Introduction to constellations", "Telescope viewing", "Mythology and science stories"],
             carry: ["Light jacket", "Mosquito repellent"]
         },
         'resort-booking': {
@@ -218,6 +218,19 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Official booking partner for Makruzz, Nautika, and Green Ocean ferries. Skip the queue and get your confirmed tickets on WhatsApp.",
             itinerary: ["Select Ferry", "Provide passenger details", "Receive PDF ticket", "Boarding assistance"],
             carry: ["ID Proofs", "Soft copy of ticket"]
+        },
+        'photoshoot': {
+            title: "Photoshoot at Beach/Resort",
+            seo_title: "Photoshoot in Havelock Island",
+            price: "2,500",
+            unit: " Package",
+            duration: "1 Hour",
+            location: "Beach/Resort",
+            type: "Service",
+            img: "https://images.unsplash.com/photo-1570459061335-c3acc6926ab7?auto=format&fit=crop&w=1200",
+            description: "Planning a dream beach wedding in Andaman? We manage venues, decor, catering, and permits for weddings, corporate retreats, and parties.",
+            itinerary: ["Consultation", "Venue Selection", "Decor & Food tasting", "Event Execution"],
+            carry: ["Guest List"]
         },
         'event-hosting': {
             title: "Destination Weddings & Event Hosting",
