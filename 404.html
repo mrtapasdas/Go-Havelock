@@ -30,20 +30,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="font-sans text-gray-800 bg-sand-beige/20 relative">
+
+    <a href="https://wa.me/919531671758?text=Hi!%20I%20want%20to%20inquire%20about%20activities%20in%20Havelock." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 animate-bounce-slow"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
     <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 py-2 px-6 md:px-12 bg-ocean-teal shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
+            <a href="https://www.gohavelock.com" class="text-2xl font-heading font-bold text-white drop-shadow-md tracking-wide">
                 <span class="text-sunset-orange">Go </span>Havelock
             </a>
             
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-white font-medium hover:text-sunset-orange transition">Home</a>
-                <a href="index.html#activities" class="text-white font-medium hover:text-sunset-orange transition">Activities</a>
-                <a href="index.html#about" class="text-white font-medium hover:text-sunset-orange transition">About</a>
-                <a href="index.html#contact-section" class="text-white font-medium hover:text-sunset-orange transition">Contact Us</a>
-                <a href="index.html#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-heading font-semibold text-sm transition-all shadow-lg hover:-translate-y-0.5">
+                <a href="#home" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#activities" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Activities
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact-section" class="relative group text-white font-medium text-sm tracking-wide transition-colors hover:text-sunset-orange">
+                    Contact Us
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sunset-orange transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <a href="#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-heading font-semibold text-sm transition-all shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-0.5">
                     Book Now
                 </a>
             </div>
@@ -54,10 +74,13 @@
         </div>
 
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-ocean-teal shadow-xl py-8 flex-col items-center space-y-6 md:hidden border-t border-white/10">
-            <a href="index.html" class="text-white text-lg font-medium hover:text-sunset-orange transition">Home</a>
-            <a href="index.html#activities" class="text-white text-lg font-medium hover:text-sunset-orange transition">Activities</a>
-            <a href="index.html#about" class="text-white text-lg font-medium hover:text-sunset-orange transition">About</a>
-            <a href="index.html#contact-section" class="text-white text-lg font-medium hover:text-sunset-orange transition">Contact Us</a>
+            <a href="#home" class="text-white text-lg font-medium hover:text-sunset-orange transition">Home</a>
+            <a href="#activities" class="text-white text-lg font-medium hover:text-sunset-orange transition">Activities</a>
+            <a href="#about" class="text-white text-lg font-medium hover:text-sunset-orange transition">About</a>
+            <a href="#contact-section" class="text-white text-lg font-medium hover:text-sunset-orange transition">Contact Us</a>
+            <a href="#activities" class="bg-sunset-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-heading font-bold shadow-md transition transform hover:-translate-y-0.5">
+                Book Adventure
+            </a>
         </div>
     </nav>
 
@@ -83,7 +106,7 @@
         </div>
     </main>
 
-    <footer class="bg-ocean-teal text-white py-12 px-6 mt-12">
+    <footer class="bg-ocean-teal text-white py-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h3 class="text-2xl font-heading font-bold mb-4"><span class="text-sunset-orange">Go </span>Havelock</h3>
@@ -92,24 +115,27 @@
             <div>
                 <h4 class="font-bold mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-sm text-gray-100">
-                    <li><a href="index.html#about" class="hover:text-sunset-orange transition">About Us</a></li>
-                    <li><a href="#" class="hover:text-sunset-orange transition">Gallery</a></li>
-                    <li><a href="index.html#contact-section" class="hover:text-sunset-orange transition">Contact</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-sunset-orange transition">Refund Policy</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-4">Popular Activities</h4>
+                <h4 class="font-bold mb-4">Activities</h4>
                 <ul class="space-y-2 text-sm text-gray-100">
-                    <li><a href="activity-detail.html?id=scuba" class="hover:text-sunset-orange transition">Scuba Diving</a></li>
-                    <li><a href="activity-detail.html?id=kayak" class="hover:text-sunset-orange transition">Night Kayaking</a></li>
-                    <li><a href="activity-detail.html?id=ferry" class="hover:text-sunset-orange transition">Ferry Booking</a></li>
+                    <li><a href="https://www.gohavelock.com/boat-scuba-diving.html" class="hover:text-sunset-orange transition">Boat Scuba Diving</a></li>
+                    <li><a href="https://www.gohavelock.com/night-kayaking.html" class="hover:text-sunset-orange transition">Night Kayaking</a></li>
+                    <li><a href="https://www.gohavelock.com/dinner-cruise-party.html" class="hover:text-sunset-orange transition">Dinner Cruise Party</a></li>
+                    <li><a href="https://www.gohavelock.com/semi-submarine.html" class="hover:text-sunset-orange transition">Semi-Submarine</a></li>
+                    <li><a href="https://www.gohavelock.com/parasailing.html" class="hover:text-sunset-orange transition">Parasailing</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold mb-4">Contact</h4>
                 <p class="text-gray-100 text-sm mb-2"><i class="fas fa-phone mr-2"></i> +91 9531671758</p>
                 <p class="text-gray-100 text-sm mb-2"><i class="fas fa-envelope mr-2"></i> hello@gohavelock.com</p>
-                <p class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Govind Nagar, Havelock Island</p>
+                <p class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Beach No. 2, Govind Nagar, Havelock, Andaman & Nicobar Island</p>
             </div>
         </div>
         <div class="border-t border-white/20 mt-8 pt-8 text-center text-xs text-gray-200">
