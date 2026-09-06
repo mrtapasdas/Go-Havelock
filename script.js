@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const message = `*New Booking Inquiry* %0A%0A*Activity:* ${activity}%0A*Name:* ${name}%0A*Date:* ${date}%0A*Guests:* ${guests}%0A%0APlease confirm availability.`;
             
-            window.open(`https://wa.me/919531671758?text=${message}`, '_blank');
+            window.open(`https://wa.me/919083938733?text=${message}`, '_blank');
         });
     }
 
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const messageText = document.getElementById('contact-message').value;
 
             const message = `*New Website Inquiry* %0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Interest:* ${interest}%0A*Message:* ${messageText}`;
-            window.open(`https://wa.me/919531671758?text=${message}`, '_blank');
+            window.open(`https://wa.me/919083938733?text=${message}`, '_blank');
         });
     }
 
