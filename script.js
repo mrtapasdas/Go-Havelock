@@ -7,18 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    // Sticky Header Effect
-    if (navbar) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.remove('py-4');
-                navbar.classList.add('py-2');
-            } else {
-                navbar.classList.remove('py-2');
-                navbar.classList.add('py-4');
-            }
-        });
-    }
 
     // Mobile Menu Toggle
     if (mobileBtn && mobileMenu) {
